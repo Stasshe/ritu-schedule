@@ -94,6 +94,8 @@ async function insertBreadcrumbs(filePath){
   if(fm){ out = out.replace(fm[0], fm[0] + top); } else { out = top + out }
   const bottom = `\n<!-- BREADCRUMB:START -->\n${breadcrumb}\n<!-- BREADCRUMB:END -->\n`;
   out = out.replace(/\n+$/, '\n');
+  out += '\n';
+  out += '\n'; 
   out = out + bottom;
   await fs.writeFile(filePath, out, 'utf8');
 }
