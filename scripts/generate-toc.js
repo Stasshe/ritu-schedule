@@ -72,13 +72,11 @@ async function buildBreadcrumb(filePath){
 
     let display;
     if(isLast){
-      if(seg.toLowerCase() === 'index.md'){
-        display = path.basename(path.dirname(filePath));
-      } else {
-        const filePathFull = path.join(DATA_DIR, ...segments);
-        const title = await getTitleFromMarkdown(filePathFull);
-        display = title || seg.replace(/\.md$/i, '');
-      }
+      const filePathFull = path.join(DATA_DIR, ...segments);
+      const title = await getTitleFromMarkdown(filePathFull);
+      display = title || seg.replace(/\.md$/i, '');
+    } else {
+      display = seg;
     }
 
     crumbs.push(`[${display}](${relToTarget})`);
