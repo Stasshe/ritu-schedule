@@ -45,6 +45,8 @@ Contact
 Language Education Center, Ritsumeikan University　sup-lec@st.ritsumei.ac.jp
 (OIC) Building A, 1F, AN Office    Tel: 072-665-2061
 
+
+
 <!-- BREADCRUMB:START -->
 [2026](../) > [4m](./) > [BBP Language Exchange Program（LEP）登録案内](2026-04-01_to_2026-04-17_BBP_LEP_registration.md)
 <!-- BREADCRUMB:END -->
