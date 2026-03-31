@@ -1,0 +1,12 @@
+{
+  "name": "ritu-schedule",
+  "version": "0.1.0",
+  "description": "for me",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "build": "node scripts/generate-toc.js",
+    "keep": "node scripts/add-gitkeep.js"
+  }
+}
