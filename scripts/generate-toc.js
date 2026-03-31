@@ -78,7 +78,7 @@ async function buildBreadcrumb(filePath){
     } else {
       display = seg;
     }
-
+    if(display === '目次') display = '';
     crumbs.push(`[${display}](${relToTarget})`);
   }
   return crumbs.join(' > ');
