@@ -2,7 +2,7 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-const DATA_DIR = path.resolve(process.cwd(), 'data');
+const DATA_DIR = path.resolve(process.cwd(), 'docs');
 
 async function exists(p){ try{ await fs.access(p); return true }catch(e){return false} }
 function toPosix(p){ return p.split(path.sep).join('/') }
@@ -75,7 +75,7 @@ async function insertBreadcrumbs(filePath){
 
 async function main(){
   if(!await exists(DATA_DIR)){
-    console.error('No data/ directory found — nothing to do.');
+    console.error('No docs/ directory found — nothing to do.');
     process.exit(0);
   }
   const dirs = await getAllDirs(DATA_DIR);

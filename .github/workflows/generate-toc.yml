@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'data/**'
+      - 'docs/**'
   workflow_dispatch:
 
 permissions:
@@ -36,4 +36,4 @@ jobs:
           author_name: github-actions
           author_email: github-actions@users.noreply.github.com
           message: "chore: update generated TOC and breadcrumbs"
-          add: 'data/**'
+          add: 'docs/**'
