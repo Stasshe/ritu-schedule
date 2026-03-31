@@ -8,6 +8,16 @@ async function exists(p){ try{ await fs.access(p); return true }catch(e){return 
 function toPosix(p){ return p.split(path.sep).join('/') }
 function isMarkdown(name){ return /\.md$/i.test(name) }
 
+// # タイトル取得（なければ null）
+async function getTitleFromMarkdown(filePath){
+  try{
+    const content = await fs.readFile(filePath, 'utf8');
+    const match = content.match(/^#\s+(.+)/m);
+    if(match) return match[1].trim();
+  }catch(e){}
+  return null;
+}
+
 async function getAllDirs(root){
   const list = [];
   async function walk(dir){
@@ -30,7 +40,11 @@ async function writeReadme(dir){
       lines.push(`- [${e.name}](${link})`);
     } else if(e.isFile() && isMarkdown(e.name)){
       if(e.name.toLowerCase() === 'index.md') continue;
-      const display = e.name.replace(/\.md$/i, '');
+
+      const filePath = path.join(dir, e.name);
+      const title = await getTitleFromMarkdown(filePath);
+
+      const display = title || e.name.replace(/\.md$/i, '');
       const link = './' + encodeURI(e.name);
       lines.push(`- [${display}](${link})`);
     }
@@ -44,16 +58,27 @@ async function buildBreadcrumb(filePath){
   const segments = rel.split(path.sep).filter(Boolean);
   const fileDir = path.dirname(filePath);
   const crumbs = [];
+
   for(let i=0;i<segments.length;i++){
     const isLast = i === segments.length - 1;
     const seg = segments[i];
-    const target = isLast ? path.join(DATA_DIR, ...segments.slice(0, i+1)) : path.join(DATA_DIR, ...segments.slice(0, i+1));
+    const target = path.join(DATA_DIR, ...segments.slice(0, i+1));
+
     let relToTarget = path.relative(fileDir, target);
     relToTarget = toPosix(relToTarget);
     if(relToTarget === '') relToTarget = './';
     if(!isLast && !relToTarget.endsWith('/')) relToTarget += '/';
     relToTarget = encodeURI(relToTarget);
-    const display = isLast ? seg.replace(/\.md$/i, '') : seg;
+
+    let display;
+    if(isLast){
+      const filePathFull = path.join(DATA_DIR, ...segments);
+      const title = await getTitleFromMarkdown(filePathFull);
+      display = title || seg.replace(/\.md$/i, '');
+    } else {
+      display = seg;
+    }
+
     crumbs.push(`[${display}](${relToTarget})`);
   }
   return crumbs.join(' > ');
