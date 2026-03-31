@@ -108,7 +108,7 @@ async function main(){
     await writeReadme(dir);
     const entries = await fs.readdir(dir, { withFileTypes: true });
     for(const e of entries){
-      if(e.isFile() && isMarkdown(e.name) && e.name.toLowerCase() !== 'index.md'){
+      if(e.isFile() && isMarkdown(e.name)){
         const fp = path.join(dir, e.name);
         await insertBreadcrumbs(fp);
       }
