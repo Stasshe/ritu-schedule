@@ -29,14 +29,14 @@ async function writeReadme(dir){
       const link = './' + encodeURI(e.name) + '/';
       lines.push(`- [${e.name}](${link})`);
     } else if(e.isFile() && isMarkdown(e.name)){
-      if(e.name.toLowerCase() === 'readme.md') continue;
+      if(e.name.toLowerCase() === 'index.md') continue;
       const display = e.name.replace(/\.md$/i, '');
       const link = './' + encodeURI(e.name);
       lines.push(`- [${display}](${link})`);
     }
   }
   lines.push('');
-  await fs.writeFile(path.join(dir, 'README.md'), lines.join('\n'), 'utf8');
+  await fs.writeFile(path.join(dir, 'index.md'), lines.join('\n'), 'utf8');
 }
 
 async function buildBreadcrumb(filePath){
@@ -83,13 +83,13 @@ async function main(){
     await writeReadme(dir);
     const entries = await fs.readdir(dir, { withFileTypes: true });
     for(const e of entries){
-      if(e.isFile() && isMarkdown(e.name) && e.name.toLowerCase() !== 'readme.md'){
+      if(e.isFile() && isMarkdown(e.name) && e.name.toLowerCase() !== 'index.md'){
         const fp = path.join(dir, e.name);
         await insertBreadcrumbs(fp);
       }
     }
   }
-  console.log('Generated README.md for each directory and inserted breadcrumbs.');
+  console.log('Generated index.md for each directory and inserted breadcrumbs.');
 }
 
 main().catch(err=>{ console.error(err); process.exit(1) });
