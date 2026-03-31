@@ -1,5 +1,5 @@
 <!-- BREADCRUMB:START -->
-[目次](index.md)
+[](index.md)
 <!-- BREADCRUMB:END -->
 
 # 目次
@@ -10,5 +10,5 @@
 
 
 <!-- BREADCRUMB:START -->
-[目次](index.md)
+[](index.md)
 <!-- BREADCRUMB:END -->
