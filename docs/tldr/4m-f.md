@@ -4,8 +4,8 @@
 
 
 # とりま今はこれ
-[大学生活とか](../2026/long/lifeplan.md)
-[サークル](../2026/circles/orientaion.md)
+- [大学生活とか](../2026/long/lifeplan.md)
+- [サークル](../2026/circles/orientaion.md)
 
 
 <!-- BREADCRUMB:START -->
