@@ -7,7 +7,7 @@
 - [curriculum](./curriculum.md)
 - [en-class](./en-class.md)
 - [大学生活と](./lifeplan.md)
-- [単位について](./union.md)
+- [単位・ユニットについて](./union.md)
 
 
 

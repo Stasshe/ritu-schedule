@@ -1,8 +1,6 @@
 <!-- BREADCRUMB:START -->
-[2026](../) > [long](./) > [union](union.md)
+[2026](../) > [long](./) > [単位・ユニットについて](union.md)
 <!-- BREADCRUMB:END -->
-
-
 
 # 単位・ユニットについて
 ディプロマポリシー
@@ -50,5 +48,5 @@ student portalで告知
 
 
 <!-- BREADCRUMB:START -->
-[2026](../) > [long](./) > [union](union.md)
+[2026](../) > [long](./) > [単位・ユニットについて](union.md)
 <!-- BREADCRUMB:END -->
