@@ -5,8 +5,9 @@
 # 目次
 
 - [curriculum](./curriculum.md)
+- [en-class](./en-class.md)
 - [大学生活と](./lifeplan.md)
-- [union](./union.md)
+- [単位について](./union.md)
 
 
 
