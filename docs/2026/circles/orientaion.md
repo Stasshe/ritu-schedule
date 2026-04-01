@@ -1,3 +1,7 @@
+<!-- BREADCRUMB:START -->
+[2026](../) > [circles](./) > [orientaion](orientaion.md)
+<!-- BREADCRUMB:END -->
+
 証明書発行はA棟一階AS事務室
 
 健康診断
@@ -53,3 +57,9 @@ RoboCup　ロボット大会に挑戦している団体
 CTF
 > LT会ハンズオン会
 プレゼンＬＴなど
+
+
+
+<!-- BREADCRUMB:START -->
+[2026](../) > [circles](./) > [orientaion](orientaion.md)
+<!-- BREADCRUMB:END -->
