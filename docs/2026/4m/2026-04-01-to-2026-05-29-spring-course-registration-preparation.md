@@ -1,3 +1,7 @@
+<!-- BREADCRUMB:START -->
+[2026](../) > [4m](./) > [2026年4月1日(水) 〜 5月29日(金) 実施 — 春学期 履修準備について](2026-04-01-to-2026-05-29-spring-course-registration-preparation.md)
+<!-- BREADCRUMB:END -->
+
 # 2026年4月1日(水) 〜 5月29日(金) 実施 — 春学期 履修準備について
 
 ## 概要
@@ -39,3 +43,9 @@
 - 重要度：
 - 終了日：2026/05/29 17:00
 - 配信カテゴリ：履修
+
+
+
+<!-- BREADCRUMB:START -->
+[2026](../) > [4m](./) > [2026年4月1日(水) 〜 5月29日(金) 実施 — 春学期 履修準備について](2026-04-01-to-2026-05-29-spring-course-registration-preparation.md)
+<!-- BREADCRUMB:END -->
