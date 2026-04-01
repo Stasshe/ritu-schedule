@@ -1,15 +1,13 @@
 <!-- BREADCRUMB:START -->
-[](index.md)
+[tldr](./) > [](index.md)
 <!-- BREADCRUMB:END -->
 
 # 目次
 
-- [2026](./2026/)
-- [2027](./2027/)
-- [tldr](./tldr/)
+- [とりま今はこれ](./4m-f.md)
 
 
 
 <!-- BREADCRUMB:START -->
-[](index.md)
+[tldr](./) > [](index.md)
 <!-- BREADCRUMB:END -->
