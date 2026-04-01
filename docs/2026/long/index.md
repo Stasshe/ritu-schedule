@@ -5,6 +5,7 @@
 # 目次
 
 - [curriculum](./curriculum.md)
+- [大学生活と](./lifeplan.md)
 
 
 
