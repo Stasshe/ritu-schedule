@@ -16,6 +16,7 @@
 - [未来人財育成奨励金 新歓ブースのお知らせ](./2026-04-13_to_2026-04-15_future_leaders_scholarship_orientation_booth.md)
 - [進路・就職ガイダンス ～自分らしい未来への第一歩・進路選択のポイントを知ろう！～](./2026-04-13_to_2026-04-16_career_guidance_for_job_hunting.md)
 - [2026年4月13日 〜 5月15日 実施 — 就活準備 全力応援企画](./2026-04-13_to_2026-05-15_job_search_prep_support.md)
+- [2026年4月13日(月) 〜 5月15日(金) 実施 — 就活準備 全力応援企画](./2026-04-13-to-2026-05-15-job-hunting-support-full-event.md)
 - [orientation](./orientation.md)
 
 
