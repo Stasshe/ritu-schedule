@@ -1,3 +1,7 @@
+<!-- BREADCRUMB:START -->
+[2026](../) > [4m](./) > [2026年4月22日(水) 実施 — 学生起業のリアルなハナシ](2026-04-22-student-entrepreneurship-real-talk-event.md)
+<!-- BREADCRUMB:END -->
+
 # 2026年4月22日(水) 実施 — 学生起業のリアルなハナシ
 
 ## イベント概要
@@ -47,3 +51,9 @@
 - 重要度：
 - 終了日：2026/04/22 19:30
 - 配信カテゴリ：学生生活・課外活動
+
+
+
+<!-- BREADCRUMB:START -->
+[2026](../) > [4m](./) > [2026年4月22日(水) 実施 — 学生起業のリアルなハナシ](2026-04-22-student-entrepreneurship-real-talk-event.md)
+<!-- BREADCRUMB:END -->
